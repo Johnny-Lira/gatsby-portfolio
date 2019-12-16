@@ -4,18 +4,12 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Cara - Gatsby Starter Portfolio`,
+    siteTitleAlt: `Johnny Lira`,
   },
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-cara`,
       options: {},
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
-      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -29,13 +23,13 @@ module.exports = {
         display: `standalone`,
         icons: [
           {
-            src: `/android-chrome-192x192.png`,
-            sizes: `192x192`,
+            src: `/static/favicon-32x32.png`,
+            sizes: `32x32`,
             type: `image/png`,
           },
           {
-            src: `/android-chrome-512x512.png`,
-            sizes: `512x512`,
+            src: `/static/favicon-150x150.png`,
+            sizes: `150x150`,
             type: `image/png`,
           },
         ],
